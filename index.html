@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>QuoteSphere | Random Quote Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="background-orb orb-one"></div>
+    <div class="background-orb orb-two"></div>
+
+    <main class="app">
+
+        <header class="topbar">
+            <div class="brand">
+                <div class="brand-icon">✦</div>
+
+                <div>
+                    <h1>QuoteSphere</h1>
+                    <p>Words that move you.</p>
+                </div>
+            </div>
+
+            <div class="quote-count">
+                <span id="quoteNumber">01</span>
+                <small>QUOTES</small>
+            </div>
+        </header>
+
+
+        <section class="quote-card" id="quoteCard">
+
+            <div class="quote-mark">“</div>
+
+            <div class="quote-content">
+
+                <span class="label">QUOTE OF THE MOMENT</span>
+
+                <p id="quoteText" class="quote-text">
+                    The future belongs to those who believe in the beauty of their dreams.
+                </p>
+
+                <div class="author">
+                    <span class="author-line"></span>
+                    <span id="authorName">Eleanor Roosevelt</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <div class="actions">
+
+            <button class="action-btn" id="copyBtn">
+                <span>⧉</span>
+                Copy
+            </button>
+
+            <button class="action-btn" id="favoriteBtn">
+                <span id="heartIcon">♡</span>
+                Favorite
+            </button>
+
+            <button class="new-quote-btn" id="newQuoteBtn">
+                <span>✦</span>
+                New Quote
+                <span class="arrow">→</span>
+            </button>
+
+        </div>
+
+
+        <div class="hint">
+            Press <kbd>SPACE</kbd> for a new quote
+        </div>
+
+
+        <footer>
+            <p>Designed & built with HTML, CSS & JavaScript</p>
+        </footer>
+
+    </main>
+
+
+    <div id="toast" class="toast">
+        <span>✓</span>
+        <span id="toastMessage">Quote copied!</span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
